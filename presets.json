@@ -1,0 +1,13 @@
+{
+	"defaultFPS": 60,
+	"timerStart": 1000,
+	"rateOfFire": 1,
+	"defaultColors": {
+		"red": true,
+		"orange": true,
+		"yellow": true,
+		"green": true,
+		"blue": true,
+		"purple": true
+	}
+}
