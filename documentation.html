@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>First Canvas</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import Scripts -->
+    <script src="src/components/navigation.js" type="module"></script>
+    <script src="src/components/footer.js" type="module"></script>
+    <script src="src/components/format.js" type="module"></script>
+</head>
+<body>
+
+	<!--NAVIGATION-->
+	<header-nav id="header" data-page="documentation"></header-nav>
+
+
+	<!--ABOUT-->
+	<div class="column is-8">
+		<h1 class="title">Project Requirements</h1>
+		<easy-link data-link="https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/p3-overview-and-tips.md"></easy-link>
+		<hr>
+		<h1 class="title">Resources Utilized</h1>
+		<easy-link data-link="https://stackoverflow.com/questions/11652197/play-multiple-sound-at-the-same-time"></easy-link>
+		<easy-link data-link="https://github.com/tonethar/IGME-330-Master/blob/master/notes/4-adding-controls.md"></easy-link>
+		<easy-link data-link="https://github.com/tonethar/IGME-330-Master/blob/master/notes/demo-web-audio-4.md"></easy-link>
+		<easy-link data-link="https://www.dummies.com/article/academics-the-arts/science/physics/important-physics-equations-to-remember-138379"></easy-link>
+
+		<hr>
+		<h1 class="title">Noteworthy</h1>
+		<p class="subtitle">This project is based around the idea of a firework sandbox. There is tons of variables the player can change, and due to 
+			using realistic physics equations, the simulation is very flexible.
+		</p>
+
+		<hr>
+		<h1 class="title">Grading</h1>
+		<ul>
+			<li>Uses Canvas and Bulma for display.</li>
+			<li>Four different controls. (colors, FPS, rate of fire, and volume)</li>
+			<li>Use of audio.</li>
+			<li>Three web components. (Easy link, navigation, footer)</li>
+			<li>About, App, and Documentation pages.</li>
+			<li>Simulation with firework physics.</li>
+			<li>Self grade: 95-100%. I know it is pretty high, but I feel I met all requirements.</li>
+		</ul>
+
+		<br><br><br><br>
+	</div>
+
+	<!--FOOTER-->
+	<firework-footer></firework-footer>
+	
+</body>
+</html>

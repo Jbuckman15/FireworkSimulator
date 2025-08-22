@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>First Canvas</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import Scripts -->
+    <script src="src/main.js" type="module"></script>
+    <script src="src/components/navigation.js" type="module"></script>
+    <script src="src/components/footer.js" type="module"></script>
+</head>
+<body>
+
+	<!--NAVIGATION-->
+	<header-nav id="header" data-page="app"></header-nav>
+
+
+	<!--APP-->
+	<main class="section">
+		<div class="columns is-multiline">
+
+			<!--CANVAS-->
+			<div class="column is-narrow">
+				<canvas width="640" height="480">
+					Get a real browser!
+				</canvas>
+			</div>
+
+			<div class="columns column is-6">
+
+				<div class="column is-4">
+					<h1 class="title">Settings</h1>
+					<section>
+						<h1>Select Colors:</h1>
+						<span><input type="checkbox" id="colorRed" checked><label for="colorRed">Red</label></span><br>
+						<span><input type="checkbox" id="colorOrange" checked><label for="colorOrange">Orange</label></span><br>
+						<span><input type="checkbox" id="colorYellow" checked><label for="colorYellow">Yellow</label></span><br>
+						<span><input type="checkbox" id="colorGreen" checked><label for="colorGreen">Green</label></span><br>
+						<span><input type="checkbox" id="colorBlue" checked><label for="colorBlue">Blue</label></span><br>
+						<span><input type="checkbox" id="colorPurple" checked><label for="colorPurple">Purple</label></span><br>
+					</section>
+				</div>
+
+				<div class="column is-4">
+					<label>Rate of Fire:<br>
+						<select id="rateOfFire">
+							<option value="5">Every 5 seconds</option>
+							<option value="2">Every 2 seconds</option>
+							<option value="1" selected>Every second</option>
+							<option value=".5">2 times a second</option>
+							<option value=".2">5 times a second</option>
+						</select>
+					</label>
+
+					<br><br><br>
+
+					<label>Frames Per Second:<br>
+						<select id="selectFPS">
+							<option value="30">30</option>
+							<option value="60" selected>60</option>
+							<option value="120">120</option>
+						</select>
+					</label>
+				</div>
+
+				<div class="column  is-5">
+					<section>
+						Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+						<span id="volumeLabel">???</span>
+					</section>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<br>
+	<br>
+	<br>
+
+	<!--FOOTER-->
+	<firework-footer></firework-footer>
+</body>
+</html>

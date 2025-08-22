@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>First Canvas</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import Scripts -->
+    <script src="src/components/navigation.js" type="module"></script>
+    <script src="src/components/footer.js" type="module"></script>
+</head>
+<body>
+
+	<!--NAVIGATION-->
+	<header-nav id="header" data-page="about"></header-nav>
+
+
+	<!--ABOUT-->
+	<main class="section">
+		<div class="columns">
+			<div class="column is-8">
+				<p class="title">Welcome to Firework Show Creator!</p>
+				<p class="subtitle">This is a website where you can customize a firework simulation 
+					with a variety of factors such as color, rate of fire, and sound volume. There is also 
+					a frames per second controller that allows you to choose which display is best suited for 
+					your target machine.<br><br>
+					You can easily choose which colors you wish to include in your show by checking the box next 
+					to each color. Feel free to mix and match colors to fully personalize your experience!<br><br>
+					Next, you can adjust the rate of fire by selecting from a number of options in the dropdown menu. 
+					If the sound effects get annoying or too loud with a faster rate of fire, feel free to use the slider 
+					next to the option to control the audio.<br><br>
+					Lastly, if you want to sacrafice framerate for a more consistent speed, use the dropdown menu to select 
+					how many updates per second you would like. If you feel your computer can handle even more, there is also 
+					a 120FPS option for even smoother animations.<br><br>
+					I hope you enjoy customizing your firework show!
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<!--FOOTER-->
+	<firework-footer></firework-footer>
+	
+</body>
+</html>
